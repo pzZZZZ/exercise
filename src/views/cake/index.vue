@@ -4,7 +4,7 @@
 	<mt-spinner type="double-bounce" color="#26a2ff" :size="60"></mt-spinner>
 	<p>加载中...</p>
 </div>
-	<mt-header title="鲜花列表">
+	<mt-header title="蛋糕">
 	  <router-link to="/" slot="left">
 	    <mt-button icon="back">返回</mt-button>
 	  </router-link>
@@ -94,10 +94,10 @@ Vue.component(Header.name, Header);
 	      	.then(function(response){
 	      		return  response.json();
 	      	}).then(function(json){
-	      		//console.log('parsed json', json)
+	      		console.log('parsed json', json)
 	      		that.flower_list = json;
 	      		that.loading = false;
-	      		//console.log(that.flower_list)
+	      		console.log(that.flower_list)
 	      	}).catch(function(ex){
 	      		console.log('parsing failed', ex)
 	      	})
@@ -111,7 +111,7 @@ Vue.component(Header.name, Header);
 		},
 		mounted(){
 			this.fetch_flower();
-			//console.log(this.flower_list)
+			console.log(this.flower_list)
 		}
 	}
 </script>

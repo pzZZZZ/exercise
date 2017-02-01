@@ -31,7 +31,7 @@
 	<div class="classification">
 		<ul>
 			<li ><router-link to='flower'><i><img src="../../assets/images/flower_1.png"></i><span>鲜花</span></router-link></li>
-			<li><i><img src="../../assets/images/cake_2.png" ></i><span>蛋糕</span></li>
+			<li><router-link to='cake'><i><img src="../../assets/images/cake_2.png" ></i><span>蛋糕</span></router-link></li>
 			<li><i><img src="../../assets/images/flowersong_1.png" ></i><span>永生花</span></li>
 			<li><i><img src="../../assets/images/gifts_2.png" ></i><span>特色礼品</span></li>
 			<li><i><img src="../../assets/images/Plant_2.png" ></i><span>更多分类</span></li>
@@ -126,7 +126,7 @@ Vue.component(Header.name, Header);
 	      	.then(function(response){
 	      		return  response.json();
 	      	}).then(function(json){
-	      		console.log('parsed json', json)
+	      		//console.log('parsed json', json)
 	      		that.flower_list = json;
 	      		console.log(that.flower_list)
 	      	}).catch(function(ex){
@@ -142,7 +142,7 @@ Vue.component(Header.name, Header);
 	      	.then(function(response){
 	      		return  response.json();
 	      	}).then(function(json){
-	      		console.log('parsed json', json)
+	      		//console.log('parsed json', json)
 	      		that.cake_list = json;
 	      		console.log(that.cake_list)
 	      	}).catch(function(ex){
