@@ -87,7 +87,7 @@ Vue.component(Header.name, Header);
 			},
 			fetch_flower(){
 	      	var that = this;
-	      	fetch('/api/flower',{
+	      	fetch('/api/cake',{
 	      		method:'get',
 	      		dataType:'json'
 	      	})
@@ -216,6 +216,8 @@ Vue.component(Header.name, Header);
 			}
 			p{
 				padding-top:10px;
+				height:24px;
+				overflow: hidden;
 			}
 			span{
 				display:block;

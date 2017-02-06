@@ -13,10 +13,12 @@
  			 <use xlink:href="#icon-cart" ></use>
 		</svg>
 	</mt-button>
-	<mt-button  slot="right">
-		<svg class="icon header-icon" aria-hidden="true">
+	<mt-button  slot="right" to='login'>
+		<router-link to="login">
+			<svg class="icon header-icon" aria-hidden="true">
  			 <use xlink:href="#icon-my" ></use>
-		</svg>
+			</svg>
+		</router-link>
 	</mt-button>
 	</mt-header>
 	<!-- banner -->
@@ -166,6 +168,7 @@ Vue.component(Header.name, Header);
 }
 .header-icon{
 	font-size: 28px;
+	color:#fff;
 }
 .banner{
 	height: 120px;
