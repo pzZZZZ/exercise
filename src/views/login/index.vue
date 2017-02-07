@@ -11,7 +11,7 @@
 		</div>
 		<div class="btns">
 			<mt-button >确定登陆</mt-button>
-			<mt-button >注册</mt-button>
+			<router-link to="signin"><mt-button >注册</mt-button></router-link>
 		</div>
 	</div>
 </template>

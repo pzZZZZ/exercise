@@ -2,8 +2,9 @@
 
 	<div class="page-index">
 	<!-- header -->
+
 	<mt-header title="flower">
-	<mt-button  slot="right">
+	<mt-button  slot="right" @click='change_serch_box'>
 		<svg class="icon header-icon" aria-hidden="true">
  			 <use xlink:href="#icon-search" ></use>
 		</svg>
@@ -21,6 +22,11 @@
 		</router-link>
 	</mt-button>
 	</mt-header>
+		<mt-search
+	v-show='serch_box'
+  v-model="value"
+  cancel-text="取消">
+</mt-search>
 	<!-- banner -->
 	<mt-swipe :auto="4000" class='banner'>
 	  <mt-swipe-item>
@@ -107,7 +113,9 @@
 import Vue from 'vue';
 import { Header } from 'mint-ui';
 import { Swipe, SwipeItem } from 'mint-ui';
+import { Search } from 'mint-ui';
 
+Vue.component(Search.name, Search);
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Header.name, Header);
@@ -115,7 +123,8 @@ Vue.component(Header.name, Header);
 		data(){
 			return {
 				flower_list:[],
-				cake_list:[]
+				cake_list:[],
+				serch_box:false
 			}
 		},
 		methods: {
@@ -150,6 +159,9 @@ Vue.component(Header.name, Header);
 	      	}).catch(function(ex){
 	      		console.log('parsing failed', ex)
 	      	})
+	      },
+	      change_serch_box(){
+	      	this.serch_box = !this.serch_box;
 	      }
 	      
 	    },
@@ -161,7 +173,10 @@ Vue.component(Header.name, Header);
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 
-
+.mint-search{
+	height:44px;
+	background:#ff6600;
+}
 .mint-header{
 	height:12.5vw;
 	background: #ff6600;
