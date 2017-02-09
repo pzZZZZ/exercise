@@ -7,7 +7,7 @@
 		</mt-header>
 		<div class="login_text">
 			<mt-field label="用户名" placeholder="请输入用户名"></mt-field>
-			<mt-field label="密码" placeholder="请输入密码"></mt-field>
+			<mt-field label="密码" placeholder="请输入密码" type='password'></mt-field>
 		</div>
 		<div class="btns">
 			<mt-button >确定登陆</mt-button>
@@ -29,6 +29,17 @@ Vue.component(Field.name, Field);
 			return{
 
 			}
+		},
+		methods:{
+			
+			 getlogin(){
+				if(localStorage.getItem('username').length!=0){
+					console.log('登陆')
+				}
+			}
+		},
+		mounted(){
+			 this.getlogin()
 		}
 	}
 </script>
