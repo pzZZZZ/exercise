@@ -168,3 +168,5 @@
 - scss 文档：[http://sass-lang.com/documentation/file.SASS_REFERENCE.html](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 - mocha 文档: [http://mochajs.org/](http://mochajs.org/)
 - express 中文官网：[http://expressjs.com/zh-cn/](http://expressjs.com/zh-cn/) 
+
+### 首页 鲜花页 蛋糕页  登录页 注册页  搜索页 购物车页 详情页 用户页面

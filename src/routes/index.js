@@ -8,6 +8,7 @@ const flower = r => require(['views/flower/index'],r);
 const cake = r => require(['views/cake/index'],r);
 const login = r => require(['views/login/index'],r);
 const signin = r => require(['views/signin/index'],r);
+const my = r => require(['views/my/index'],r);
 // 根目录
 const rootPath = '';
 
@@ -35,7 +36,11 @@ const routes = [
   },{
   path: '/signin', 
   component: signin, 
-  name: 'signin'}
+  name: 'signin'
+  },{
+  path: '/my', 
+  component: my, 
+  name: 'my'}
 ].map(route => {
   route.path = rootPath + route.path;
   return route;

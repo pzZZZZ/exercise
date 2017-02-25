@@ -57,7 +57,7 @@ Vue.component(Field.name, Field);
 		      		localStorage.setItem('username', this.username);
 		      		localStorage.setItem('password', this.password);
 		      		console.log(localStorage.getItem('username'))
-		      		MessageBox('提示', '操作成功');
+		      		MessageBox('注册成功', '现在登陆吧');
 		      		this.$router.push({path:'/login'})
 		      	}else{
 		      			Toast({

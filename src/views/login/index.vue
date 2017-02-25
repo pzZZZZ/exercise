@@ -10,7 +10,7 @@
 			<mt-field label="密码" placeholder="请输入密码" type='password'></mt-field>
 		</div>
 		<div class="btns">
-			<mt-button >确定登陆</mt-button>
+			<mt-button @click='login'>确定登陆</mt-button>
 			<router-link to="signin"><mt-button >注册</mt-button></router-link>
 		</div>
 	</div>
@@ -36,6 +36,9 @@ Vue.component(Field.name, Field);
 				if(localStorage.getItem('username').length!=0){
 					console.log('登陆')
 				}
+			},
+			login(){
+				this.$router.push('my')
 			}
 		},
 		mounted(){
