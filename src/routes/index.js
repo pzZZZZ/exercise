@@ -9,38 +9,54 @@ const cake = r => require(['views/cake/index'],r);
 const login = r => require(['views/login/index'],r);
 const signin = r => require(['views/signin/index'],r);
 const my = r => require(['views/my/index'],r);
+const flowerlist = r => require(['views/flower_list/index'],r);
+const flowerDeatil = r => require(['views/flower_detail/index'],r);
+const car = r => require(['views/car/index'],r);
 // 根目录
 const rootPath = '';
 
 // 页面路由
 const routes = [
   {
-   path: '', 
+   path: '',
    redirect: {name: 'firstPage'}
   },{
-  path: '/', 
-  component: firstPage, 
-  name: 'firstPage'
+      path: '/index',
+      component: firstPage,
+      name: 'firstPage',
   },{
    path: '/flower',
-   component: flower, 
+   component: flower,
    name: 'flower'
   },{
-  path: '/cake', 
-  component: cake, 
+  path: '/cake',
+  component: cake,
   name: 'cake'
   },{
-  path: '/login', 
-  component: login, 
+  path: '/login',
+  component: login,
   name: 'login'
   },{
-  path: '/signin', 
-  component: signin, 
+  path: '/signin',
+  component: signin,
   name: 'signin'
   },{
-  path: '/my', 
-  component: my, 
-  name: 'my'}
+  path: '/my',
+  component: my,
+  name: 'my'
+ },{
+ path: '/flowerlist',
+ component: flowerlist,
+ name: 'flowerlist'
+},{
+  path:'/flowerdeatil',
+  component:flowerDeatil,
+  name:'flowerdeatil'
+},{
+  path:'/car',
+  component:car,
+  name:'car'
+}
 ].map(route => {
   route.path = rootPath + route.path;
   return route;

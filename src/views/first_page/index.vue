@@ -38,7 +38,7 @@
 	</mt-swipe>
 	<div class="classification">
 		<ul>
-			<li ><router-link to='flower'><i><img src="../../assets/images/flower_1.png"></i><span>鲜花</span></router-link></li>
+			<li ><router-link to='/flowerlist'><i><img src="../../assets/images/flower_1.png"></i><span>鲜花</span></router-link></li>
 			<li><router-link to='cake'><i><img src="../../assets/images/cake_2.png" ></i><span>蛋糕</span></router-link></li>
 			<li><i><img src="../../assets/images/flowersong_1.png" ></i><span>永生花</span></li>
 			<li><i><img src="../../assets/images/gifts_2.png" ></i><span>特色礼品</span></li>
@@ -107,7 +107,7 @@
 		</ul>
 	</div>
 	</div>
-	
+
 </template>
 <script type="text/javascript">
 import Vue from 'vue';
@@ -163,7 +163,7 @@ Vue.component(Header.name, Header);
 	      change_serch_box(){
 	      	this.serch_box = !this.serch_box;
 	      }
-	      
+
 	    },
 		mounted(){
       		this.fetch_flower(),
@@ -207,22 +207,22 @@ Vue.component(Header.name, Header);
 				padding-top:10px;
 			}
 			img{
-				
+
 				width: 25px;
 				height:26px;
-				
+
 			}
 			span{
 				font-size:12px;
 			}
 			&:nth-child(1){
-		
+
 				i{
 					background:#fb8989;
-					
+
 				}
 			}
-			
+
 			&:nth-child(2){
 				i{
 					background:#de8dc5;
@@ -243,7 +243,7 @@ Vue.component(Header.name, Header);
 					background:#88d4c0;
 				}
 			}
-			
+
 		}
 	}
 }
@@ -277,7 +277,7 @@ Vue.component(Header.name, Header);
 				span{
 					color:#f00;
 				}
-				
+
 			}
 			&:nth-child(2){
 				background:url('../../assets/images/xpsd_06.jpg') no-repeat;
@@ -309,7 +309,7 @@ Vue.component(Header.name, Header);
 		li{
 			width: 50%;
 			padding-bottom:10px;
-			
+
 			div{
 			border:1px solid #e5e5e5;
 			text-align:center;
@@ -398,21 +398,21 @@ Vue.component(Header.name, Header);
 				font-size:14px;
 				position: relative;
 				top:10px;
-				
+
 			}
 			p{
 				color:#b9b9b9;
 				font-size:12px;position: relative;
 				top:20px;
-				
+
 			}
 			img{
 				width: 100%;
-				
+
 
 			}
 			}
-		
+
 	}
 }
 </style>

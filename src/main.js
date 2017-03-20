@@ -8,12 +8,14 @@ import App from './app';
 import routes from './routes';
 import storeOption from './store';
 import MintUI from 'mint-ui';
+import VueTouch from 'vue-touch';
 import 'mint-ui/lib/style.css';
 import 'assets/libs/clear.css';
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(MintUI);
+Vue.use(VueTouch);
 
 // 创建一个路由对象用于管理页面的路由
 const router = new VueRouter({
