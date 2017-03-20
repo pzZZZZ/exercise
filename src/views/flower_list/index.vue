@@ -5,29 +5,31 @@
 		    <mt-button icon="back">返回</mt-button>
 		  </router-link>
 		</mt-header>
-		<ul class='flower_box'
-		  v-infinite-scroll="loadMore"
-		  infinite-scroll-disabled="loading"
-		  infinite-scroll-distance="10">
-			<li v-for="(i,index) in flower_list">
-				<div class='link_box' v-on:click="GoDetail(i)">
-					<div class='img_box'>
-						<img v-bind:src="i.img">
+		<div class="flower_con"
+		 v-infinite-scroll="loadMore"
+		 infinite-scroll-disabled="loading"
+		 infinite-scroll-distance="10">
+			<ul class='flower_box'>
+				<li v-for="(i,index) in flower_list">
+					<div class='link_box' v-on:click="GoDetail(i)">
+						<div class='img_box'>
+							<img v-bind:src="i.img">
+						</div>
+						<h4>{{i.title}}</h4>
+						<h5>￥{{i.price}}</h5>
 					</div>
-					<h4>{{i.title}}</h4>
-					<h5>￥{{i.price}}</h5>
+				</li>
+			</ul>
+			<div class="page-infinite-loading" v-show="loading" >
+				<div class="loading_box">
+					<mt-spinner class='load_img' color="#444" type="fading-circle"></mt-spinner>
+					<span>加载中...</span>
 				</div>
-			</li>
-		</ul>
-		<div class="page-infinite-loading" v-show="loading" >
-			<div class="loading_box">
-				<mt-spinner class='load_img' color="#444" type="fading-circle"></mt-spinner>
-				<span>加载中...</span>
-			</div>
-    </div>
-		<p class="page-infinite-loading" v-show="loadEnd">
-			<span>没有更多了~</span>
-		</p>
+	    </div>
+			<p class="page-infinite-loading" v-show="loadEnd">
+				<span>没有更多了~</span>
+			</p>
+		</div>
 		<!--   回到顶部 -->
 			<v-touch tag='div' v-on:tap="handleScroll" class="backTop">
 					<img src="../../assets/images/back.png" alt="">
@@ -58,7 +60,7 @@ Vue.component(Header.name, Header);
 				//回到顶部
 				let scrollIndex =0;
 				//回到顶部
-					let scroll_box = document.querySelectorAll('.flower_box');
+					let scroll_box = document.querySelectorAll('.flower_con');
 					let scrolldistance = scroll_box[scrollIndex].scrollTop-20;
 					let speed = scrolldistance/40;
 					let that = this;
@@ -139,13 +141,16 @@ Vue.component(Header.name, Header);
 		.header-icon{
 			font-size: 28px;
 		}
-		.flower_box{
+		.flower_con{
 			width: 100%;
 			flex: 1;
-			display: flex;
-			flex-wrap: wrap;
 			overflow: scroll;
 			-webkit-overflow-scrolling: touch;
+		}
+		.flower_box{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
 			box-sizing: border-box;
 			padding-left: 10px;
 			li{
