@@ -146,7 +146,6 @@ Vue.component(Header.name, Header);
 			flex: 1;
 			overflow: scroll;
 			-webkit-overflow-scrolling: touch;
-		}
 		.flower_box{
 			width: 100%;
 			display: flex;
@@ -215,6 +214,7 @@ Vue.component(Header.name, Header);
 				margin-left: 10px;
 			}
 		}
+	}
 		.backTop{
 			position: fixed;
 			right: 20px;
