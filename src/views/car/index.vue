@@ -34,6 +34,7 @@
 				<label for="checkbox">全选</label>
 			</div>
 			<b>已选商品<em>{{count}}</em>件</b>
+			<b>共计<em>{{price}}</em>元</b>
 			<p>去结算</p>
 		</div>
 		<!-- <div class="footer">
@@ -52,6 +53,7 @@
 				count:0,
 				checkAll:false,
 				selectPro:[],
+				price:0,
 			}
 		},
 		methods:{
@@ -64,10 +66,12 @@
 						item.checked = true;
 						if(item.checked){
 							that.count += that.carList[index].count;
+							that.price += that.carList[index].count * that.carList[index].price;
 						}
 					}else{
 						item.checked = false;
 						that.count = 0;
+						that.price = 0;
 					}
 				})
 			},
@@ -75,8 +79,10 @@
 					var checkbox = document.querySelectorAll('.checkbox')[index];
 					if(checkbox.checked){
 						this.count += this.carList[index].count;
+						this.price += this.carList[index].count * this.carList[index].price;
 					}else{
 						this.count -= this.carList[index].count;
+						this.price -= this.carList[index].count * this.carList[index].price;
 					}
 					var flag = true;
 					document.querySelectorAll('.checkbox').forEach(function(item,index){
