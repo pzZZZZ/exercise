@@ -41,13 +41,17 @@
 			<li ><router-link to='/flowerlist'><i><img src="../../assets/images/flower_1.png"></i><span>鲜花</span></router-link></li>
 			<li><router-link to='cake'><i><img src="../../assets/images/cake_2.png" ></i><span>蛋糕</span></router-link></li>
 			<li><i><img src="../../assets/images/flowersong_1.png" ></i><span>永生花</span></li>
-			<li><i><img src="../../assets/images/gifts_2.png" ></i><span>特色礼品</span></li>
+			<router-link to='/gift' tag='li'>
+					<i><img src="../../assets/images/gifts_2.png" ></i><span>特色礼品</span>
+			</router-link>
+			<!-- <li><i><img src="../../assets/images/gifts_2.png" ></i><span>特色礼品</span></li> -->
 			<li><i><img src="../../assets/images/Plant_2.png" ></i><span>更多分类</span></li>
 		</ul>
 	</div>
 	<div class="desc">
 		<ul>
-			<li><span>新品鲜花速递</span><i>新款驾到</i></li>
+			<router-link to='/flowerlist' tag='li'><span>新品鲜花速递</span><i>新款驾到</i></router-link>
+			<!-- <li><span>新品鲜花速递</span><i>新款驾到</i></li> -->
 			<li><span>美味巧克力</span><i>最最甜蜜的宠爱</i></li>
 			<li><span>漫画选花</span><i>浪漫以画代话</i></li>
 		</ul>
@@ -55,7 +59,7 @@
 	<div class="flower_list">
 		<ul>
 			<template v-for="(i,index) in flower_list">
-		    <li>
+		    <li @click='GoDetail(i)'>
 		    	<div>
 		    		<img v-bind:src="i.img">
 					<p>{{i.title}}</p>
@@ -128,6 +132,37 @@ Vue.component(Header.name, Header);
 			}
 		},
 		methods: {
+			GoDetail(item){
+				// let item =   {
+				//     title:'百花仙子',
+				//     price:252,
+				//     img:'http://img01.hua.com/uploadpic/newpic/9012176.jpg_220x240.jpg',
+				//     id:1,
+				//     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
+				//     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
+				//     img_list:[
+				//       {
+				//         img:"http://img01.hua.com/uploadpic/images/2017310153187614840.jpg"
+				//       },{
+				//         img:'http://img01.hua.com/uploadpic/images/2017310153256880130.jpg'
+				//       },{
+				//         img:'http://img01.hua.com/uploadpic/images/2017310153363609500.jpg'
+				//       },{
+				//         img:'http://img01.hua.com/uploadpic/images/2017310153417742831.jpg'
+				//       },{
+				//         img:'http://img01.hua.com/uploadpic/images/2017310153476221362.jpg'
+				//       }
+				//     ],
+				//     appraise:[
+				//       {
+				//         id:'1589',
+				//         detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+				//       }
+				//     ]
+				//   }
+			  localStorage.flower = encodeURIComponent(JSON.stringify(item));
+				this.$router.push('/flowerdeatil')
+			},
 	      fetch_flower(){
 	      	var that = this;
 	      	fetch('/api/indexflower',{
