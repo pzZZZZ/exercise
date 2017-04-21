@@ -14,7 +14,8 @@ const flowerDeatil = r => require(['views/flower_detail/index'],r);
 const car = r => require(['views/car/index'],r);
 const gift = r => require(['views/gift/index'],r);
 const detail = r => require(['views/gift/detail.vue'],r);
-console.log(detail)
+const cake_list = r => require(['views/cake_list/index'],r);
+const cake_detail = r => require(['views/cake_list/cake_detail.vue'],r);
 // 根目录
 const rootPath = '';
 
@@ -67,6 +68,14 @@ const routes = [
     path:'/detail',
     component:detail,
     name:'detail'
+  },{
+    path:'/cakelist',
+    component:cake_list,
+    name:'cakelist'
+  },{
+    path:'/cakedetail',
+    component:cake_detail,
+    name:'cakedetail'
   }
 ].map(route => {
   route.path = rootPath + route.path;

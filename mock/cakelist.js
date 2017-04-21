@@ -1,0 +1,246 @@
+const item = [
+  {
+    title:'元祖 清风有信(8寸)',
+    price:288,
+    img:'http://img01.hua.com/uploadpic/newpic/5302071.jpg_220x240.jpg',
+    id:1,
+    stuff:"8寸,清风有信慕斯蛋糕",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'慕思的美味，加上巧克力的香醇，如一屡清风，抚过唇边，划过心底。',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/201511241646343050158.jpg"
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  },
+  {
+    title:'元祖 玫瑰圆舞曲(10寸)',
+    price:288,
+    img:"http://img01.hua.com/uploadpic/newpic/5303069.jpg_220x240.jpg",
+    id:2,
+    stuff:"10寸,原味蛋胚、布丁夹层、什锦水果夹层等",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'1、美丽的玫瑰花至上而下的自然环绕，双层蛋糕，给你带来加倍的美味。<br>2、适合与绿茶、可乐等饮料搭配食用。当天食用口感好；如食用不完请放冰箱至0-8度冷藏（冬季食用前先放置半小时，蛋胚口感更为松软）。<br>3、原味蛋胚、布丁夹层、什锦水果夹层等。<br>保鲜时间：冷藏3～7℃1天<br>',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/2016971448381628665.jpg"
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448422045596.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448473773745.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448522026370.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448565808413.jpg'
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  },
+  {
+    title:'元祖 莫尔卡夫(8寸)',
+    price:218,
+    img:'http://img01.hua.com/uploadpic/newpic/5302068.jpg_220x240.jpg',
+    id:1,
+    stuff:"8寸,巧克力口味、布丁夹层、什锦水果夹层。",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'适合与绿茶、可乐等饮料搭配食用。当天食用口感好；如食用不完请放冰箱至0-8度冷藏（冬季食用前先放置半小时，蛋胚口感更为松软）。<br>巧克力口味、布丁夹层、什锦水果夹层。<br>保鲜时间：冷藏3～7℃1天<br>',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/2016971454325996417.jpg"
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454396708331.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454447817950.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454546037066.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971455117219745.jpg'
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  },
+  {
+    title:'元祖 清风有信(8寸)',
+    price:288,
+    img:'http://img01.hua.com/uploadpic/newpic/5302071.jpg_220x240.jpg',
+    id:1,
+    stuff:"8寸,清风有信慕斯蛋糕",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'慕思的美味，加上巧克力的香醇，如一屡清风，抚过唇边，划过心底。',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/201511241646343050158.jpg"
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  },
+  {
+    title:'元祖 玫瑰圆舞曲(10寸)',
+    price:288,
+    img:"http://img01.hua.com/uploadpic/newpic/5303069.jpg_220x240.jpg",
+    id:2,
+    stuff:"10寸,原味蛋胚、布丁夹层、什锦水果夹层等",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'1、美丽的玫瑰花至上而下的自然环绕，双层蛋糕，给你带来加倍的美味。<br>2、适合与绿茶、可乐等饮料搭配食用。当天食用口感好；如食用不完请放冰箱至0-8度冷藏（冬季食用前先放置半小时，蛋胚口感更为松软）。<br>3、原味蛋胚、布丁夹层、什锦水果夹层等。<br>保鲜时间：冷藏3～7℃1天<br>',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/2016971448381628665.jpg"
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448422045596.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448473773745.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448522026370.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448565808413.jpg'
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  },
+  {
+    title:'元祖 黄金燕麦香芋(8寸)',
+    price:218,
+    img:'http://img01.hua.com/uploadpic/newpic/5302064.jpg_220x240.jpg',
+    id:1,
+    stuff:"8寸,巧克力口味、布丁夹层、什锦水果夹层。",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'适合与绿茶、可乐等饮料搭配食用。当天食用口感好；如食用不完请放冰箱至0-8度冷藏（冬季食用前先放置半小时，蛋胚口感更为松软）。<br>巧克力口味、布丁夹层、什锦水果夹层。<br>保鲜时间：冷藏3～7℃1天<br>',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/2016971454325996417.jpg"
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454396708331.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454447817950.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454546037066.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971455117219745.jpg'
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  },
+  {
+    title:'元祖 爱的种子(8寸)',
+    price:288,
+    img:'http://img01.hua.com/uploadpic/newpic/5302063.jpg_220x240.jpg',
+    id:1,
+    stuff:"8寸,清风有信慕斯蛋糕",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'慕思的美味，加上巧克力的香醇，如一屡清风，抚过唇边，划过心底。',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/201511241646343050158.jpg"
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  },
+  {
+    title:'诺心 你好米菲蛋糕 hallo miffy（2',
+    price:218,
+    img:"http://img01.hua.com/uploadpic/newpic/5901052.jpg_220x240.jpg",
+    id:2,
+    stuff:"10寸,原味蛋胚、布丁夹层、什锦水果夹层等",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'1、美丽的玫瑰花至上而下的自然环绕，双层蛋糕，给你带来加倍的美味。<br>2、适合与绿茶、可乐等饮料搭配食用。当天食用口感好；如食用不完请放冰箱至0-8度冷藏（冬季食用前先放置半小时，蛋胚口感更为松软）。<br>3、原味蛋胚、布丁夹层、什锦水果夹层等。<br>保鲜时间：冷藏3～7℃1天<br>',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/2016971448381628665.jpg"
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448422045596.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448473773745.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448522026370.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971448565808413.jpg'
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  },
+  {
+    title:'诺心 草莓拿破仑蛋糕（5-8人食）',
+    price:298,
+    img:'http://img01.hua.com/uploadpic/newpic/5902028.jpg_220x240.jpg',
+    id:1,
+    stuff:"8寸,巧克力口味、布丁夹层、什锦水果夹层。",
+    peisong:'顺丰快递上海发货：周一到周日18:00前订单当天发货，超过这个时间第二天发货；',
+    fusong:'免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)',
+    desc:'适合与绿茶、可乐等饮料搭配食用。当天食用口感好；如食用不完请放冰箱至0-8度冷藏（冬季食用前先放置半小时，蛋胚口感更为松软）。<br>巧克力口味、布丁夹层、什锦水果夹层。<br>保鲜时间：冷藏3～7℃1天<br>',
+    img_list:[
+      {
+        img:"http://img01.hua.com/uploadpic/images/2016971454325996417.jpg"
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454396708331.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454447817950.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971454546037066.jpg'
+      },{
+        img:'http://img01.hua.com/uploadpic/images/2016971455117219745.jpg'
+      }
+    ],
+    appraise:[
+      {
+        id:'1589',
+        detail:'客服服务非常好 ，打电话来很耐心的给我解答并解决问题。'
+      }
+    ]
+  }
+]
+
+module.exports = {
+  api: '/api/cakelist',
+  response: function (req, res) {
+    res.send(item);
+  }
+}

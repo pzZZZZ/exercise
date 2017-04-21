@@ -1,6 +1,6 @@
 <template>
 	<div class="flower_wrap">
-		<mt-header title="特色礼品">
+		<mt-header title="蛋糕">
 		  <router-link to="/index" slot="left">
 		    <mt-button icon="back">返回</mt-button>
 		  </router-link>
@@ -54,7 +54,7 @@ Vue.component(Header.name, Header);
 		methods:{
 			GoDetail(item){
 			  localStorage.flower = encodeURIComponent(JSON.stringify(item));
-				this.$router.push('/detail')
+				this.$router.push('/cakedetail')
 			},
 			handleScroll () {
 				//回到顶部
@@ -74,7 +74,7 @@ Vue.component(Header.name, Header);
 			},
 			getFlowerList(){
 				var that = this;
-				fetch('/api/giftlist',{
+				fetch('/api/cakelist',{
 					method:'get',
 					dataType:'json'
 				})

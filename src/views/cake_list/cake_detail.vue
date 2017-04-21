@@ -25,9 +25,9 @@
 					<li>
 						<span>备注：</span><i v-html='flower.desc' style="font-style:normal"></i>
 					</li>
-					<li><span>附送：</span>{{flower.fusong}}</li>
+					<!-- <li><span>附送：</span>{{flower.fusong}}</li>
 					<li><span>配送：</span>{{flower.peisong}}</li>
-					<li><span>说明：</span>巧克力产品不支持7天无理由退货，请谨慎选择！</li>
+					<li><span>说明：</span>巧克力产品不支持7天无理由退货，请谨慎选择！</li> -->
 				</ul>
 			</div>
 			<div class="appraise">
