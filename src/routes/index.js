@@ -7,7 +7,7 @@ const firstPage = r => require(['views/first_page/index'],r);
 const flower = r => require(['views/flower/index'],r);
 const cake = r => require(['views/cake/index'],r);
 const login = r => require(['views/login/index'],r);
-const signin = r => require(['views/signin/index'],r);
+
 const my = r => require(['views/my/index'],r);
 const flowerlist = r => require(['views/flower_list/index'],r);
 const flowerDeatil = r => require(['views/flower_detail/index'],r);
@@ -40,10 +40,6 @@ const routes = [
   path: '/login',
   component: login,
   name: 'login'
-  },{
-  path: '/signin',
-  component: signin,
-  name: 'signin'
   },{
   path: '/my',
   component: my,

@@ -2,12 +2,14 @@
 	<div  class="car_wrap">
 		<div class="header">
 			<mt-header background="pink" fixed title="购物车">
-				<router-link to="/index" slot="left">
+				
+				<div slot='left' @click='back'>
 					<mt-button icon="back">返回</mt-button>
-				</router-link>
+				</div>
 			</mt-header>
 		</div>
 		<div  class='car_box'>
+			<!-- <div class="test">{{abc}}</div> -->
 			<ul>
 				<li v-for="(item,index) in carList">
 					<div class="select_one">
@@ -54,9 +56,19 @@
 				checkAll:false,
 				selectPro:[],
 				price:0,
+				abc:'123456'
 			}
 		},
+		mounted(){
+			this.carList = this.$store.getters.getcarlist;
+			//this.carList = this.$store.getters.getcarlist;
+			// this.carList = JSON.parse(decodeURIComponent(localStorage.carList));
+			// console.log(this.carList);
+		},
 		methods:{
+			back(){
+				this.$router.go(-1)
+			},
 			selectAllPro(){
 				var that =this;
 				this.count = 0;
@@ -121,12 +133,8 @@
 				this.carList.splice(index,1);
 				localStorage.carList = encodeURIComponent(JSON.stringify(this.carList));
 			}
-		},
-		mounted(){
-			//this.carList = this.$store.getters.getcarlist;
-			this.carList = JSON.parse(decodeURIComponent(localStorage.carList));
-			console.log(this.carList);
 		}
+		
 	}
 </script>
 <style lang="scss"  scoped>

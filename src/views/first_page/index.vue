@@ -4,15 +4,17 @@
 	<!-- header -->
 
 	<mt-header title="flower">
-	<mt-button  slot="right" @click='change_serch_box'>
+	<!-- <mt-button  slot="right" @click='change_serch_box'>
 		<svg class="icon header-icon" aria-hidden="true">
  			 <use xlink:href="#icon-search" ></use>
 		</svg>
-	</mt-button>
+	</mt-button> -->
 	<mt-button  slot="right">
+		<router-link to='/car'>
 		<svg class="icon header-icon" aria-hidden="true">
  			 <use xlink:href="#icon-cart" ></use>
 		</svg>
+		</router-link>
 	</mt-button>
 	<mt-button  slot="right" to='login'>
 		<router-link to="login">
@@ -22,11 +24,6 @@
 		</router-link>
 	</mt-button>
 	</mt-header>
-		<mt-search
-	v-show='serch_box'
-  v-model="value"
-  cancel-text="取消">
-</mt-search>
 	<!-- banner -->
 	<mt-swipe :auto="4000" class='banner'>
 	  <mt-swipe-item>
@@ -40,12 +37,14 @@
 		<ul>
 			<li ><router-link to='/flowerlist'><i><img src="../../assets/images/flower_1.png"></i><span>鲜花</span></router-link></li>
 			<li><router-link to='cakelist'><i><img src="../../assets/images/cake_2.png" ></i><span>蛋糕</span></router-link></li>
-			<li><i><img src="../../assets/images/flowersong_1.png" ></i><span>永生花</span></li>
+			<router-link to='/flowerlist' tag='li'>
+					<i><img src="../../assets/images/flowersong_1.png" ></i><span>永生花</span>
+			</router-link>
 			<router-link to='/gift' tag='li'>
 					<i><img src="../../assets/images/gifts_2.png" ></i><span>特色礼品</span>
 			</router-link>
 			<!-- <li><i><img src="../../assets/images/gifts_2.png" ></i><span>特色礼品</span></li> -->
-			<li><i><img src="../../assets/images/Plant_2.png" ></i><span>更多分类</span></li>
+			<!-- <li><i><img src="../../assets/images/Plant_2.png" ></i><span>更多分类</span></li> -->
 		</ul>
 	</div>
 	<div class="desc">
@@ -77,13 +76,12 @@
 		  <mt-button icon="more" slot="right"></mt-button>
 		</mt-header>
 		<h1><img src="../../assets/images/home_nav_01.png"></h1>
-		<ul >
-
+		<router-link tag='ul' to='/cakelist'>
 			<li v-for="i in cake_list">
 				<img :src="i.img">
 				<h2>{{i.title}}</h2>
 			</li>
-		</ul>
+		</router-link>
 	</div>
 	<div class="gifts">
 		<mt-header>
@@ -117,9 +115,9 @@
 import Vue from 'vue';
 import { Header } from 'mint-ui';
 import { Swipe, SwipeItem } from 'mint-ui';
-import { Search } from 'mint-ui';
 
-Vue.component(Search.name, Search);
+
+
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Header.name, Header);
@@ -127,8 +125,7 @@ Vue.component(Header.name, Header);
 		data(){
 			return {
 				flower_list:[],
-				cake_list:[],
-				serch_box:false
+				cake_list:[]
 			}
 		},
 		methods: {
@@ -266,9 +263,7 @@ Vue.component(Header.name, Header);
 	      		console.log('parsing failed', ex)
 	      	})
 	      },
-	      change_serch_box(){
-	      	this.serch_box = !this.serch_box;
-	      }
+
 
 	    },
 		mounted(){
@@ -301,7 +296,8 @@ Vue.component(Header.name, Header);
 	ul{
 		display: flex;
 		justify-content:space-between;
-		padding:10px ;
+		padding:10px  50px;
+
 		li{
 			text-align:center;
 			i{

@@ -121,7 +121,11 @@ Vue.component(Toast);
 						carList.push(this.flower);
 					}
 					localStorage.carList = encodeURIComponent(JSON.stringify(carList));
+					// console.log(carList)
 					Toast('已加入购物车');
+					carList[0].num = 1;
+					this.$store.dispatch('add_car',carList[0])
+					console.log(this.$store.getters.getcarlist)
 				//this.$store.dispatch('change_car', this.flower);
 			},
 			getFlowerList(){

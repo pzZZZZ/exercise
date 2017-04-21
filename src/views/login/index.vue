@@ -11,7 +11,6 @@
 		</div>
 		<div class="btns">
 			<mt-button @click='login'>确定登陆</mt-button>
-			<router-link to="signin"><mt-button >注册</mt-button></router-link>
 		</div>
 	</div>
 </template>
@@ -31,18 +30,12 @@ Vue.component(Field.name, Field);
 			}
 		},
 		methods:{
-			
-			 getlogin(){
-				if(localStorage.getItem('username').length!=0){
-					console.log('登陆')
-				}
-			},
 			login(){
 				this.$router.push('my')
 			}
 		},
 		mounted(){
-			 this.getlogin()
+			 
 		}
 	}
 </script>
