@@ -152,6 +152,7 @@ Vue.component(Header.name, Header);
 			flex-wrap: wrap;
 			box-sizing: border-box;
 			padding-left: 10px;
+			-webkit-overflow-scrolling:touch;
 			li{
 				width: 50%;
 				height: 252px;
