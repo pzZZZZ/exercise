@@ -118,6 +118,7 @@ Vue.component(Toast);
 						carList.push(this.flower);
 					}
 					localStorage.carList = encodeURIComponent(JSON.stringify(carList));
+					console.log(decodeURIComponent(localStorage.carList))
 					Toast('已加入购物车');
 				//this.$store.dispatch('change_car', this.flower);
 			},

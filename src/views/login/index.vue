@@ -6,8 +6,8 @@
 		  </router-link>
 		</mt-header>
 		<div class="login_text">
-			<mt-field label="用户名" placeholder="请输入用户名"></mt-field>
-			<mt-field label="密码" placeholder="请输入密码" type='password'></mt-field>
+			<mt-field label="用户名" placeholder="请输入用户名" v-model='userid'></mt-field>
+			<mt-field label="密码" placeholder="请输入密码" type='password' v-model='password'></mt-field>
 		</div>
 		<div class="btns">
 			<mt-button @click='login'>确定登陆</mt-button>
@@ -26,16 +26,23 @@ Vue.component(Field.name, Field);
 	export default{
 		data(){
 			return{
-
+				userid:'',
+				password:''
 			}
 		},
 		methods:{
 			login(){
-				this.$router.push('my')
+				if(this.userid=='123'&&this.password=='123'){
+					this.$router.push('dingdan')
+					localStorage.user ='123'
+				}
+				
 			}
 		},
 		mounted(){
-			 
+			 if(localStorage.user=='123'){
+			 	this.$router.push('dingdan')
+			 }
 		}
 	}
 </script>

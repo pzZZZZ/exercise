@@ -3,7 +3,7 @@ const item = [
     title:'鲜花/一心一意',
     price:'126',
     img:'http://okmtvwn51.bkt.clouddn.com/img/id1.jpg',
-    id:'1',
+    id:'flower1',
     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
     img_list:[
@@ -30,7 +30,7 @@ const item = [
     title:'鲜花/一往情深',
     price:'239',
     img:'http://okmtvwn51.bkt.clouddn.com/img/id2.jpg',
-    id:'2',
+    id:'flower2',
     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
     img_list:[
@@ -57,7 +57,7 @@ const item = [
     title:'鲜花/阳光海岸',
     price:'219',
     img:'http://okmtvwn51.bkt.clouddn.com/img/id3.jpg',
-    id:'3',
+    id:'flower3',
     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
     img_list:[
@@ -84,7 +84,7 @@ const item = [
     title:'鲜花/幸福久久',
     price:'518',
     img:'http://okmtvwn51.bkt.clouddn.com/img/id4.jpg',
-    id:'4',
+    id:'flower4',
     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
     img_list:[
@@ -111,7 +111,7 @@ const item = [
     title:'鲜花/一心一意',
     price:'126',
     img:'http://okmtvwn51.bkt.clouddn.com/img/id1.jpg',
-    id:'1',
+    id:'flower5',
     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
     img_list:[
@@ -138,7 +138,7 @@ const item = [
     title:'鲜花/一往情深',
     price:'239',
     img:'http://okmtvwn51.bkt.clouddn.com/img/id2.jpg',
-    id:'2',
+    id:'flower6',
     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
     img_list:[
@@ -165,7 +165,7 @@ const item = [
     title:'鲜花/阳光海岸',
     price:'219',
     img:'http://okmtvwn51.bkt.clouddn.com/img/id3.jpg',
-    id:'3',
+    id:'flower7',
     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
     img_list:[
@@ -192,7 +192,7 @@ const item = [
     title:'鲜花/幸福久久',
     price:'518',
     img:'http://okmtvwn51.bkt.clouddn.com/img/id4.jpg',
-    id:'4',
+    id:'flower8',
     stuff:"苏醒玫瑰19枝，粉色桔梗2枝，白色小菊4枝，搭配情人草适量",
     flower_langulage:'看到你的笑，听到你的歌声，哦，原来你是百花仙子',
     img_list:[

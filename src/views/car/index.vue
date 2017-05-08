@@ -37,7 +37,8 @@
 			</div>
 			<b>已选商品<em>{{count}}</em>件</b>
 			<b>共计<em>{{price}}</em>元</b>
-			<p>去结算</p>
+			<router-link tag='p' to='/login'>去结算</router-link>
+			
 		</div>
 		<!-- <div class="footer">
 			footer
@@ -60,9 +61,9 @@
 			}
 		},
 		mounted(){
-			this.carList = this.$store.getters.getcarlist;
 			//this.carList = this.$store.getters.getcarlist;
-			// this.carList = JSON.parse(decodeURIComponent(localStorage.carList));
+			//this.carList = this.$store.getters.getcarlist;
+			this.carList = JSON.parse(decodeURIComponent(localStorage.carList));
 			// console.log(this.carList);
 		},
 		methods:{

@@ -16,6 +16,7 @@ const gift = r => require(['views/gift/index'],r);
 const detail = r => require(['views/gift/detail.vue'],r);
 const cake_list = r => require(['views/cake_list/index'],r);
 const cake_detail = r => require(['views/cake_list/cake_detail.vue'],r);
+const dingdan = r => require(['views/dingdan/index'],r);
 // 根目录
 const rootPath = '';
 
@@ -56,6 +57,10 @@ const routes = [
   path:'/car',
   component:car,
   name:'car'
+  },,{
+  path:'/dingdan',
+  component:dingdan,
+  name:'dingdan'
   },{
     path:'/gift',
     component:gift,
